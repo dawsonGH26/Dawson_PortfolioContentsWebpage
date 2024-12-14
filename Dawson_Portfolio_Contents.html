@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio: Dawson Ring</title>
+    <style>
+        body {
+            background-color: #000000; /* Set background to black */
+        }
+        h1 {
+            color: #00CC00; /* Set text color */
+            text-align: center; /* Center the text */
+            border: 10px solid white; /* Initial border */
+            padding: 20px; /* Space between text and border */
+        }
+
+        /* CSS for the buttons */
+        .button {
+            position: absolute; /* Position buttons relative to the page */
+            color: white; /* Set text color */
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Button 1 - Hover effect */
+        #button1:hover {
+            border: 3px solid #FFFFFF; 
+        }
+
+        /* Button 2 - Hover effect */
+        #button2:hover {
+            border: 3px solid #FFFFFF; 
+        }
+
+        /* Button 3 - Hover effect */
+        #button3:hover {
+            border: 3px solid #FFFFFF;
+        }
+
+        /* CSS for images */
+        .image {
+            position: absolute; /* Position images relative to the page */
+            width: 200px; /* Default image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Portfolio Contents:</h1>
+
+    <!-- Buttons with adjustable position and size -->
+    <button id="button1" class="button" style="left: 1%; top: 140px; width: 32%; height: 50px; background-color: #FF0000">Introduction (About Me)</button>
+    <button id="button2" class="button" style="left: 34%; top: 140px; width: 33%; height: 50px; background-color: #00cc00">Education</button>
+    <button id="button3" class="button" style="left: 68%; top: 140px; width: 31%; height: 50px; background-color: #0000FF">My Projects</button>
+
+    <!-- Image Set 1 -->
+    <img class="image" style="left: 1%; top: 30%; width: 15.5%; height: 20%" src="images\c_Languages.jpg" alt="C Languages" />
+    <img class="image" style="left: 1%; top: 51%; width: 32%; height: 20%" src="images\Java_logo_icon.png" alt="Java" />
+    <img class="image" style="left: 16.5%; top: 30%; width: 16.5%; height: 20%" src="images\download.jpg" alt="Unity" />
+    <img class="image" style="left: 1%; top: 71%; width: 15.5%; height: 19%" src="images\Visual-Studio-Logo-1024x768.jpg"/>
+    <img class="image" style="left: 15.5%; top: 71%; width: 16.5%; height: 19%" src="images\i_love_coding_classic_round_sticker-rea1b29c259aa4a6fa55370d2cec10648_0ugmp_8byvr_704.jpg"/>
+
+    <!-- Image Set 2 -->
+    <img class="image" style="left: 34%; top: 30%; width: 16.5%; height: 20%" src="images\Riceville_Highschool.jpg" />
+    <img class="image" style="left: 50.5%; top: 30%; width: 16.5%; height: 20%" src="images\scratch-programming-interface.png" alt="Java" />
+    <img class="image" style="left: 34%; top: 50%; width: 16.5%; height: 20%" src="images\NICC.jpg" />
+    <img class="image" style="left: 50.5%; top: 50%; width: 16.5%; height: 20%" src="images\whats-breadboard.jpg"/>
+    <img class="image" style="left: 34%; top: 70%; width: 16.5%; height: 20%" src="images\AAU.jpg" />
+    <img class="image" style="left: 50.5%; top: 70%; width: 16.5%; height: 20%" src="images\VS_Gap125.png" />
+
+    <!-- Image Set 3 -->
+    <img class="image" style="left: 68%; top: 30%; width: 31.5%; height: 32.5%" src="images\FinishedMazeGameSS.png" />
+    <img class="image" style="left: 68%; top: 62.5%; width: 31.5%; height: 27.5%" src="images\portfoliowebsitess.png" />
+
+    <script>
+        // Array of colors to be used for the border
+        const borderColors = ['#FFFFFF', '#00CC00', '#1E90FF', '#FF0000', '#FFD700'];
+
+        // Function to change the border color
+        function changeBorderColor() {
+            // Randomly select a color from the array
+            const randomColor = borderColors[Math.floor(Math.random() * borderColors.length)];
+            
+            // Apply the randomly selected color to the border of the h1 element
+            document.getElementById("header").style.borderColor = randomColor;
+        }
+
+        // Call the function every 0.5 seconds (500 milliseconds)
+        setInterval(changeBorderColor, 500);
+    </script>
+</body>
+</html>
