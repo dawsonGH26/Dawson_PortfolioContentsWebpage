@@ -6,11 +6,12 @@
         body {
             background-color: #000000; /* Set background to black */
         }
-        h1 {
+        #textheader {
             color: #00CC00; /* Set text color */
             text-align: center; /* Center the text */
-            border: 10px solid white; /* Initial border */
-            padding: 20px; /* Space between text and border */
+            border: 1vh solid white; /* Border around the header */
+            padding: 1.5%; /* Space between text and border */
+            font-size: 3vh; /* Scales font size between 1.5rem and 5rem based on viewport width */
         }
 
         /* CSS for the buttons */
@@ -20,7 +21,7 @@
             font-size: 16px;
             border: none;
             cursor: pointer;
-            padding: 10px;
+            
             transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
         }
 
@@ -48,13 +49,13 @@
     </style>
 </head>
 <body>
-    <h1 id="header">Portfolio Contents:</h1>
+    <p id="textheader">Dawson Ring: Portfolio Contents:</p>
 
     <!-- Button 1 with the updated onclick to navigate to Dawson_Portfolio_Introduction.html -->
-    <button id="button1" class="button" style="left: 1%; top: 140px; width: 32%; height: 50px; background-color: #FF0000" onclick="window.location.href='Dawson_Portfolio_Introduction.html';">Introduction (About Me)</button>
+    <button id="button1" class="button" style="left: 1%; top: 19%; width: 32%; height: 7%; background-color: #FF0000" onclick="window.location.href='Dawson_Portfolio_Introduction.html';">Introduction (About Me)</button>
     
-    <button id="button2" class="button" style="left: 34%; top: 140px; width: 33%; height: 50px; background-color: #00cc00">Education</button>
-    <button id="button3" class="button" style="left: 68%; top: 140px; width: 31%; height: 50px; background-color: #0000FF">My Projects</button>
+    <button id="button2" class="button" style="left: 34%; top: 19%; width: 33%; height: 7%; background-color: #00cc00">Education</button>
+    <button id="button3" class="button" style="left: 68%; top: 19%; width: 31%; height: 7%; background-color: #0000FF">My Projects</button>
 
     <!-- Image Set 1 -->
     <img class="image" style="left: 1%; top: 30%; width: 15.5%; height: 20%" src="images\c_Languages.jpg" alt="C Languages" />
@@ -75,21 +76,6 @@
     <img class="image" style="left: 68%; top: 30%; width: 31.5%; height: 32.5%" src="images\FinishedMazeGameSS.png" />
     <img class="image" style="left: 68%; top: 62.5%; width: 31.5%; height: 27.5%" src="images\portfoliowebsitess.png" />
 
-    <script>
-        // Array of colors to be used for the border
-        const borderColors = ['#FFFFFF', '#00CC00', '#1E90FF', '#FF0000', '#FFD700'];
 
-        // Function to change the border color
-        function changeBorderColor() {
-            // Randomly select a color from the array
-            const randomColor = borderColors[Math.floor(Math.random() * borderColors.length)];
-            
-            // Apply the randomly selected color to the border of the h1 element
-            document.getElementById("header").style.borderColor = randomColor;
-        }
-
-        // Call the function every 0.5 seconds (500 milliseconds)
-        setInterval(changeBorderColor, 500);
-    </script>
 </body>
 </html>
