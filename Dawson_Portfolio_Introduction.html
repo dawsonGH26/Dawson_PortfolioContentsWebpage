@@ -1,9 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First HTML Page</title>
+    <title>Introduction (About Me)</title>
+    <style>
+        /* Set the body background color */
+        body {
+            background-image: url("images/cornfield.jpg");
+            background-size: cover; /* Ensures the image covers the entire screen */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed;
+        }
+
+        .button {
+            position: absolute; /* Position buttons relative to the page */
+            color: white; /* Set text color */
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            
+            transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Button 1 - Hover effect */
+        #button1:hover {
+            border: 3px solid #FFFFFF; 
+        }
+
+        /* Button 2 - Hover effect */
+        #button2:hover {
+            border: 3px solid #FFFFFF; 
+        }
+        /*
+        Interests
+        Skills
+        Background
+        */
+        /* Styling for the predefined text box */
+        #Background {
+            width: 20%;  /* Define the width of the box */
+            min-height: 5%;  /* Define the minimum height */
+            padding: 1%;
+            font-size: 16px;
+            border: 2px solid #000;  /* Solid border around the box */
+            background-color: #54e874;  /* Background color of the text box */
+            position: absolute;  /* Position it anywhere on the page */
+            top: 2.5%;  /* Distance from the top of the page */
+            left: 24%;  /* Distance from the left of the page */
+        }
+
+        #Skills {
+            width: 20%;  /* Define the width of the box */
+            min-height: 5%;  /* Define the minimum height */
+            padding: 1%;
+            font-size: 16px;
+            border: 2px solid #000;  /* Solid border around the box */
+            background-color: #54e874;  /* Background color of the text box */
+            position: absolute;  /* Position it anywhere on the page */
+            top: 2.5%;  /* Distance from the top of the page */
+            left: 56%;  /* Distance from the left of the page */
+        }
+
+        #Interests {
+            width: 20%;  /* Define the width of the box */
+            min-height: 5%;  /* Define the minimum height */
+            padding: 1%;
+            font-size: 16px;
+            border: 2px solid #000;  /* Solid border around the box */
+            background-color: #54e874;  /* Background color of the text box */
+            position: absolute;  /* Position it anywhere on the page */
+            top: 53%;  /* Distance from the top of the page */
+            left: 56%;  /* Distance from the left of the page */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+    <button id="button1" class="button" style="left: 56%; border: 2px solid #000; top: 76%; width: 22.25%; height: 5%; background-color: #FF0000" onclick="window.location.href='index.html';">Home</button>
+    
+    <button id="button2" class="button" style="left: 56%; top: 82%; border: 2px solid #000; width: 22.25%; height: 5%; background-color: #00cc00">Education</button>
+    <!-- The predefined text box with static content -->
+    <div id="Background">
+        <h3 style = "text-align: center">Background</h3>
+        <p>My name is Dawson Ring. I was grown and raised in McIntire Iowa until I was 6. Once I was 6 me, my mom and my sister moved to Flordia until I was 17, at which we moved back to McIntire. My experiences in Florida helped me understand diversity and appreciate it while still staying firmly grounded in my morals and beliefs. While I was in Flordia I always thought I wanted to be an architect or a fruit farmer. It wasn't until we moved back to my roots would I discover my true passion: Programming</p>
+        <p>My career path was undefined to say the least. Then, one day, I was assigned to a computer science class. Everything seemed normal at first to me. That all changed when I found a command in HTML to draw lines on the screen and control them how I wanted to. It was then I knew my goal: "I want to be a programmer, better yet, I want to be a GAME programmer".</p>
+        <p>I have a very analytical mindset that is always asking questions. Even if my program works, I am not satisfied if I dont know the why because then I can't alter it to use it in a different way in the future. This is what makes me love programming: it never gets old, it is never boring. Mix that with my love for videogames and I have my dream job.</p>
+    </div>
+
+    <div id="Skills">
+        <h3 style = "text-align: center">Skills / Advantages</h3>
+        <p>- Analytical Mindset &nbsp;&nbsp;&nbsp;&nbsp; - Curiousity</p>
+        <p>- C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Java</p>
+        <p>- Debugging  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            - C#</p>
+        <p>- Familiarity with Unreal                   </p>
+        <p>- Unity &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- VS (Visual Studio)</p>
+        <p>     - VSCode (Visual Studio Code)</p>
+        <p> - Enjoys Coding in General</p>
+        <p>- Team Player           </p>
+
+
+    </div>
+
+    <div id="Interests">
+        <h3 style = "text-align: center">Interests</h3>
+        <p>- Video Games            - Programming (any form)</p>
+        <p>- Technology             - Programming Communities</p>
+
+    </div>
+
 </body>
 </html>
