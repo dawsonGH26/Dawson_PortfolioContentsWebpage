@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Style for the customizable heading */
+        :root {
+            --background-color: rgb(0, 0, 128); /* Default background color (light gray) */
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        .custom-heading {
+            position: absolute; /* Position it anywhere on the page */
+            top: 5%; /* Distance from the top of the page */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust position to perfectly center */
+            font-size: 6vw; /* Font size that scales with viewport width */
+            color: #fbfafa; /* Text color */
+            font-weight: bold; /* Make the text bold */
+            text-align: center; /* Center the text */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional text shadow for better readability */
+        }
+
+        /* Style for each video container */
+        .video-container {
+            position: absolute;  /* Allows for positioning videos anywhere on the screen */
+            text-align: center;  /* Centers the heading text */
+            width: 31%;  /* Default width of the video container (scaled to 40% of the screen width) */
+            max-width: 600px;  /* Max width for large screens */
+            height: auto;
+        }
+
+        /* Header styles for video captions */
+        .video-container h3 {
+            margin: 0; /* Removes default margin */
+            padding: 10px; /* Adds some padding around the header */
+            font-size: 18px; /* Font size for the header */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white; /* Text color */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+        }
+
+        /* Style for videos */
+        .video-container video {
+            width: 100%;  /* Makes the video fill the container width */
+            height: auto;  /* Keeps aspect ratio */
+            object-fit: contain; /* Ensures the video is contained within the container, preserving aspect ratio */
+        }
+
+        .button {
+            position: absolute; /* Position buttons relative to the page */
+            color: white; /* Set text color */
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            
+            transition: border 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+        }
+
+        /* Button 1 - Hover effect */
+        #button1:hover {
+            border: 3px solid #FFFFFF; 
+        }
+
+        /* Button 2 - Hover effect */
+        #button2:hover {
+            border: 3px solid #FFFFFF; 
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Customizable "My Projects" Heading -->
+    <div class="custom-heading">
+        My Projects
+    </div>
+
+    <!-- Video 1: Positioned at 10% from top, 5% from left -->
+    <div class="video-container" style="top: 50%; left: 2.5%;">
+        <h3>Maze Game Code Flavor</h3>
+        <video controls>
+            <source src="images/Dawson_MazeGame - Microsoft Visual Studio 2024-12-30 12-20-10.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Video 2: Positioned at 50% from top, 60% from left -->
+    <div class="video-container" style="top: 30%; left: 35%;">
+        <h3>Maze Game Execution and Interaction (Demonstration 2)</h3>
+        <video controls>
+            <source src="images/C__Users_dawso_source_repos_Dawson_MazeGame_x64_Debug_Dawson_MazeGame.exe 2024-12-30 12-19-27.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-container" style="top: 50%; left: 67.5%;">
+        <h3>Portfolio Website Demo</h3>
+        <video controls>
+            <source src="images\PortfolioDemo.mp4">
+        </video>
+    </div>
+
+    <!-- Video 3: Positioned at 10% from top, 60% from left -->
+    <div class="video-container" style="top: 10%; left: 67.5%;">
+        <h3>Maze Game Execution and Interaction (Demonstration 3)</h3>
+        <video controls>
+            <source src="images/C__Users_dawso_source_repos_Dawson_MazeGame_x64_Debug_Dawson_MazeGame.exe 2024-12-30 12-20-22.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Video 4: Positioned at 50% from top, 5% from left -->
+    <div class="video-container" style="top: 10%; left: 2.5%;">
+        <h3>Maze Game Execution and Interaction (Demonstration 1)</h3>
+        <video controls>
+            <source src="images/C__Users_dawso_source_repos_Dawson_MazeGame_x64_Debug_Dawson_MazeGame.exe 2024-12-30 12-22-32.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button id="button1" class="button" style="left: 40%; top: 71%; width: 22.25%; height: 5%; background-color: #FF0000" onclick="window.location.href='index.html';">Home</button>
+    
+    <button id="button2" class="button" style="left: 40%; top: 77%; width: 22.25%; height: 5%; background-color: #00cc00" onclick="window.location.href='Dawson_Portfolio_Education.html';">Education</button>
+
+    <button id="button2" class="button" style="left: 40%; top: 83%; width: 22.25%; height: 5%; background-color: #0000ff" onclick="window.location.href='Dawson_Portfolio_Resume.html';">Resume</button>
+
+</body>
+</html>
